@@ -1,0 +1,19 @@
+.main_slider{
+    border: 3px solid #000;
+}
+.main_text{
+    width: 771px;
+}
+.slider-item{
+    width: 400px;
+}
+.slider-item {
+    display: none;
+    transition: opacity 0.3s ease-in-out;
+
+}
+
+.slider-item.active {
+    display: block;
+    opacity: 1;
+}
