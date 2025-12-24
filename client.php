@@ -1,6 +1,9 @@
 <?php 
 include 'temp/headr.php';
-
+if (!isset($_SESSION['id_user']) || $_SESSION['id_role'] != 1) {
+  header('Location: /');
+  exit;
+}
 if (isset($_POST['order'])) {
     $name_order = $_POST['name_order'];
     $date = $_POST['date'];
